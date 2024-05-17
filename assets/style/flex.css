@@ -1,3 +1,4 @@
+/*cabeçalho*/
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -6,10 +7,91 @@
     column-gap: 33px;
 }
 
+/*categorias*/
+.categorias__lista{
+    display: flex;
+    flex-direction: column;
+    /*espaço entre linhas*/
+    row-gap: 0.5em;
+}
+
+/*Destaques*/
+.destaques{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.destaques__barra{
+    /*faz com que a barra seja responsiva*/
+    flex-grow: 1;
+}
+
+
+
+
+/*Eventos*/
+.eventos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+    justify-content: center;
+}
+
+.eventos__item{
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/*Agenda*/
+.agenda__lista{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+   justify-content: center;
+}
+
+.agenda__item{
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/*rodape*/     
+.rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+.rodape__logo{
+    align-self: end;
+}
+
 @media (min-width: 720px){
+    /*cabeçalho*/
     .menu{
         column-gap: 75px;
     }
+    /*categorias*/
+    .categorias__lista{
+        flex-wrap: wrap;
+        /*espaço entre colunas*/
+        column-gap: 1.5em;
+        row-gap: 1em;
+    }
+
+    .eventos__lista{
+        justify-content: end;
+    }
+
+    .agenda__lista{
+        justify-content: end;
+    }
+
+    
+
 }
 
 @media (min-width: 1440px){
